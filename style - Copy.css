@@ -1,0 +1,45 @@
+.image-container img {
+    max-height: 300px;
+}
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+header {
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: zoomIn 1s ease;
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.image-container img {
+    animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
